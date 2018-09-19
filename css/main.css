@@ -6,11 +6,12 @@ h3{
 /*  text-align: center;*/
 }
 
-html, body, h1, h2, h3, p, a, img, ul, li, main, canvas, footer, header {
+html, body, h1, h2, h3, p, a, img, ul, li, main, div, canvas, footer, header {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 50%;
+
   font: inherit;
   vertical-align: baseline;
 }
@@ -23,12 +24,43 @@ header {
 }
 
 main {
-    height: 760px;
-    width: 820px;
     background-color: grey; /* For browsers that do not support gradients */
-    background-image: radial-gradient(circle, white, white, lightgrey);
+    background-image: radial-gradient(circle, white,lavender, dimgrey);
+}
+/*animation example originally
+from https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_speed*/
+div {
+  /*  width: 200px;
+    height: 50px;
+    background-color: white;
+    font-weight: bold;
+    position: relative;*/
+   position: relative;
+   left: 0;
+   top: 100%;
+   width: 100%;
+   text-align: center;
+   font-size: 18px;
+    animation: mymove 2s ;
+}
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+#div6 {animation-timing-function: linear;}
+#div7 {animation-timing-function: ease-in;}
+
+
+@keyframes mymove {
+    from {left: 20%;}
+    to {left: 50%;}
 }
 
-ul {
-
+.menu {
+    border-radius: 120px;
+    background: #73AD21;
+  /*  padding: 20px;
+    width: 200px;
+    height: 200px;*/
 }
