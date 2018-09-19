@@ -1,47 +1,48 @@
 
-h2{
-/*  text-align: center;*/
-}
-h3{
-/*  text-align: center;*/
-}
-
-html, body, h1, h2, h3, p, a, img, ul, li, main, div, canvas, footer, header {
+/*html, body, h1, h2, h3, p, a, img, ul, li, main, div, canvas, footer, header {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 50%;
 
   font: inherit;
   vertical-align: baseline;
-}
+}*/
 
 header {
     background-color: #f1f1f1;
-    /*padding: 30px; */
-    text-align: center;
+    padding: 30px;
+    text-align: left;
     font-size: 35px;
 }
-
+h2 {
+  text-decoration-color: red;
+  font-size: 1.65em;
+  font-family: "Courier New", Courier, monospace;
+}
+h3 {
+  font-size: 0.65em;
+  font-family: "Courier New", Courier, monospace;
+}
 main {
-    background-color: grey; /* For browsers that do not support gradients */
-    background-image: radial-gradient(circle, white,lavender, dimgrey);
+      background-image: radial-gradient(circle, white,lavender, dimgrey);
 }
 /*animation example originally
 from https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_speed*/
 div {
- width: 60px;
+    width: 60px;
     height: 60px;
       /* background-color: white;
     font-weight: bold;
     position: relative;*/
-  position: absolute;
+    position: absolute;
   /* left: 0;
    top: 100%;
    width: 100%;*/
-  text-align: center;
+   text-align: center;
    font-size: 28px;
+
    animation: mymove 2s ;
+
 }
 #div1 {animation-timing-function: linear;
   left: 35%;
@@ -75,19 +76,13 @@ div {
 
 @keyframes mymove {
     from {left: 0%;}
-    to {left: 50%;}
+    to {left: 35%;}
 }
 
 .menu {
     border-radius: 250px;
-    background: #73AD21;
-  /*  padding: 20px;
-    width: 200px;
-    height: 200px;*/
-}
-/*
-.menu {
-    position: absolute;
+    background: grey; #73AD21;
+    background-image: radial-gradient(circle, grey, lightgrey, white);
     display: inline-block;
 }
 
@@ -95,31 +90,49 @@ div {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+
+    /*min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 2;
+    padding: 12px 16px;*/
+    z-index: 1;
 }
+.dropdown-content a {
+   color: black;
+
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
 
 .menu:hover  .dropdown-content{
     display: block;
-} */
+    opacity: 0.7;
+    /*border-radius: 150px;*/
+    background-color: #3e8e41;
 
-.menu {
-
-    display: inline-block;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 2;
+
+
+p {
+  font-size: 1.0em;
+  font-family: "Courier New", Courier, monospace; Arial, Helvetica, sans-serif;
+  color: green;
+  text-align: right;
+  text-shadow: 0 0 5px #000000;
 }
 
-.menu:hover  .dropdown-content{
-    display: block;
+p1 {
+  font-size: 0.65em;
+  font-family: "Courier New", Courier, monospace;
+  color: green;
+  width:180;
+
+}
+footer{
+  font-size: 0.65em;
+  font-family: "Courier New", Courier, monospace;
+  text-align: right;
 }
