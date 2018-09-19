@@ -21,3 +21,14 @@ header {
     text-align: center;
     font-size: 35px;
 }
+
+main {
+    height: 760px;
+    width: 820px;
+    background-color: grey; /* For browsers that do not support gradients */
+    background-image: radial-gradient(circle, white, white, lightgrey);
+}
+
+ul {
+
+}
